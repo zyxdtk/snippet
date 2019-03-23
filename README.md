@@ -1,1 +1,1 @@
-LeetCode note
+code snippet
