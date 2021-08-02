@@ -1,0 +1,19 @@
+// [python quickstart](https://grpc.io/docs/quickstart/python.html#run-a-grpc-application)
+// python -m grpc_tools.protoc --python_out=. --grpc_python_out=. -I. delogo_submit.proto
+
+syntax = "proto3";
+option go_package = "proto/delogo_submit";
+
+package delogo_submit;
+
+service DelogoSubmiter {
+    rpc Submit(DelogoSubmitRequest) returns (DelogoSubmitReply) {}
+}
+
+message DelogoSubmitRequest {
+    string file_key = 1;
+}
+
+message DelogoSubmitReply {
+    bool success = 1;
+}
