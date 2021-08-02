@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	address     = "39.107.224.111:8959"
+	address     = "127.0.0.1:8959"
 	defaultName = "32f3ec1f64f04981a9d92ab37750105f"
 )
 
