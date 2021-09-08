@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	address     = "127.0.0.1:8959"
+	address     = "39.107.224.111:8959"
 	defaultName = "32f3ec1f64f04981a9d92ab37750105f"
 )
 
@@ -32,7 +32,7 @@ func main() {
 	if len(os.Args) > 1 {
 		name = os.Args[1]
 	}
-	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 100*time.Second)
 	defer cancel()
 	log.Println("Submit %v", name)
 	r, err := c.Submit(ctx, &pb.DelogoSubmitRequest{FileKey: "32f3ec1f64f04981a9d92ab37750105f"})
