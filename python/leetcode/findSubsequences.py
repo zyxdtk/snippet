@@ -25,7 +25,6 @@ class Solution:
                         cache[i].append([nums[i], nums[j]])
                     break
 
-
         result = []
         for i in range(0, len(nums) - 1, 1):
             if len(cache[i]) > 0:
@@ -35,5 +34,5 @@ class Solution:
 
 
 s = Solution()
-result = s.findSubsequences(nums=[4, 6,6,7,6, 7, 7, 7, 7,7,5,5])
+result = s.findSubsequences(nums=[4, 6, 6, 7, 6, 7, 7, 7, 7, 7, 5, 5])
 print(result)
